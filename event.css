@@ -1,0 +1,120 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family:   'Arial Narrow Bold', sans-serif;
+    background-image: linear-gradient(100deg, rgb(180, 203, 216), rgb(194, 179, 199));
+}
+form .allEvent{
+    width: 500px;
+    color: black;
+    background-image: linear-gradient(100deg,rgb(219, 179, 211),rgb(174, 227, 236));
+    margin: 200px 600px;
+    padding: 10px;
+    border-radius: 5px;
+    padding-left: 35px;
+}
+form .allEvent h2{
+    text-align: center;
+    color: white;
+}
+form .allEvent label , .allEvent input, .allEvent button{
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+    border: 0px;
+    border-radius: 10%;
+} 
+form .allEvent button{
+    background-color: (#db72df);
+    color: black;
+    margin-left: 200px;
+    width: 80px;
+}
+form .allEvent button:hover{
+    background-color: black;
+    color: white;
+}
+form .allEvent input{
+    width: 400px;
+    background-color: rgba(180, 177, 171, 0.876);
+}
+form .allEvent input:focus{
+    background-color: white;
+    color: black;
+}
+ 
+/* style warn msg */
+
+.warnMsg1{
+    background-color: rgb(250, 17, 29);
+    color: white;
+    border-radius: 35px;
+    width: 250px;
+    margin-left: 50px;
+    margin-top: 5px;
+    padding: 5px;
+    text-align: center;
+    display: none;
+}
+/*Result:*/
+
+.result{ 
+    color: #fff; 
+    display: none; 
+    font-weight: bold; 
+    background: #8672df81; 
+    margin: 20px;
+} 
+.result .nameEvent{
+    margin-bottom: 10px;
+    text-align: center;
+    margin-left: 100px;  
+    background-color: rgba(199, 192, 183, 0.39);
+    width: 200px;
+    padding: 15px;
+    border-radius: 20px;
+    color: rgb(9, 9, 10);
+}
+.result div{ 
+    padding: 10px; 
+    border-radius: 3px; 
+    display: inline-block;
+    width: 80px;
+} 
+.result div  span{ 
+    padding: 15px; 
+    border-radius: 3px; 
+    background: #7572a5d0;
+    width: 30px; 
+    display: inline-block; 
+} 
+.smalltext{ 
+    padding-top: 5px; 
+    font-size: 16px; 
+}
+
+/*responsive*/
+@media (max-width:500px){
+    form .allEvent{
+        width: 400px;
+        margin: 100px 10px;
+        padding: 10px;
+        border-radius: 5px;
+        padding-left: 25px;
+    }
+    form .allEvent input{
+        width: 350px;
+    }  
+    .result{ 
+        margin: 10px;
+        width: 350px;
+    } 
+    .result div{
+        width: 60px;
+        }
+    .result .nameEvent{
+        margin-left: 50px;
+    }    
+}

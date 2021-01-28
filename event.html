@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Event Information</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="event.css">
+    </head>
+    <body>
+        <section>
+            <form>
+            <div class="allEvent">
+                <h2>Event Information!</h2>
+                <label></label><b>What's the title of the event?</b></label>
+                <input type="text" class="textTitle" placeholder="Enter the title">
+                <p class="warnMsg1">Please fill this box!</p>
+                <label><b>What's the date and time of the event?</b></label>
+                <input type="datetime-local" value="2021-01-01T00:00" min="2021-01-01T00:00" max="2021-08-20T00:00" name="Event date" class="textDate">
+                <!-- <p class="warnMsg2">Please fill this box!</p> -->
+                <button type="button" class="btnStart"><b>Start</b></button>
+                <div class="result">
+                    <div> 
+                        <p class="nameEvent"></p>
+                        <span class="days" id="day"></span> 
+                        <div class="smalltext">Days</div> 
+                      </div> 
+                      <div> 
+                        <span class="hours" id="hour"></span> 
+                        <div class="smalltext">Hours</div> 
+                      </div> 
+                      <div> 
+                        <span class="minutes" id="minute"></span> 
+                        <div class="smalltext">Minutes</div> 
+                      </div> 
+                      <div> 
+                        <span class="seconds" id="second"></span> 
+                        <div class="smalltext">Seconds</div> 
+                      </div>
+                </div>
+            </div>
+        </form>
+        </section>
+        <script src="event.js" type="module"></script>
+        <script src="eventExport.js" type="module"></script>
+    </body>
+</html>
